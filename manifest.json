@@ -1,0 +1,42 @@
+{
+  "name": "Coloco - fun symmetry painting",
+  "short_name": "Coloco",
+  "version": "0.1.5",
+  "manifest_version": 2,
+  "minimum_chrome_version": "28",
+  "description": "Fun symmetry painting",
+  "offline_enabled": true,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": [{
+    "src": "images/coloco-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/coloco-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/coloco-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "images/coloco-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/coloco-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/coloco-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "./index.html",
+  "display": "standalone"
+}
