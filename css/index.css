@@ -538,14 +538,14 @@ smartphone {
   position: absolute;
   top: 8vh;
   left: 5vw;
-  width: 20vw;
-  height: 20vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 0vh;
   pointer-events: none;
   border: none;
   outline: none;
   background: url(../images/smartphone.png);
-  background-size: 20vw 20vw;
+  background-size: 30vw 30vw;
   opacity: 0.8;
   z-index: 1000;
   -webkit-app-region: no-drag;
