@@ -536,18 +536,18 @@ gobutton:hover {
 
 smartphone {
   position: absolute;
-  top: 8vh;
+  top: 15vh;
   left: 5vw;
-  width: 30vw;
-  height: 30vw;
+  width: 90vw;
+  height: 90vw;
   border-radius: 0vh;
   pointer-events: none;
   border: none;
   outline: none;
   background: url(../images/smartphone.png);
-  background-size: 30vw 30vw;
+  background-size: 90vw 90vw;
   opacity: 0.8;
-  z-index: 1000;
+  z-index: 2000;
   -webkit-app-region: no-drag;
   -webkit-animation-name: rotate;
   -webkit-animation-duration: 4.5s;
