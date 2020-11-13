@@ -92,23 +92,6 @@ back {
   -webkit-app-region: no-drag;
 }
 
-smartphone {
-  position: absolute;
-  top: 3vh;
-  left: 2vw;
-  width: 8vw;
-  height: 10vh;
-  border-radius: 0vh;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: url(../images/smartphone.png.png);
-  background-size: 8vw 10vh;
-  opacity: 0.8;
-  z-index: 1003;
-  -webkit-app-region: no-drag;
-}
-
 fun {
   position: absolute;
   top: 3.5vh;
@@ -536,16 +519,16 @@ gobutton:hover {
 
 smartphone {
   position: absolute;
-  top: 15vh;
-  left: 5vw;
-  width: 90vw;
-  height: 90vw;
+  top: 20vh;
+  left: 10vw;
+  width: 75vw;
+  height: 75vw;
   border-radius: 0vh;
   pointer-events: none;
   border: none;
   outline: none;
   background: url(../images/smartphone.png);
-  background-size: 90vw 90vw;
+  background-size: 75vw 75vw;
   opacity: 0.8;
   z-index: 2000;
   -webkit-app-region: no-drag;
@@ -555,18 +538,34 @@ smartphone {
   -webkit-transition-timing-function: linear;
 }
 
-@media (orientation: landscape) {
+@media screen and (max-width: 992px) {
+  @media (orientation: landscape) {
+    smartphone {
+      visibility: hidden;
+    }
+    portraitCover {
+      background-color: none;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    smartphone {
+      visibility: visible;
+    }
+    portraitCover {
+      background-size: 100vw 100vh;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1999;
+      background: black
+    }
+  }
+}
+@media screen and (min-width: 993px) {
   smartphone {
     visibility: hidden;
   }
 }
-
-@media (orientation: portrait) {
-  smartphone {
-    visibility: visible;
-  }
-}
-
 
 button0 {
   position: absolute;
