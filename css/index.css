@@ -92,23 +92,6 @@ back {
   -webkit-app-region: no-drag;
 }
 
-smartphone {
-  position: absolute;
-  top: 3vh;
-  left: 2vw;
-  width: 8vw;
-  height: 10vh;
-  border-radius: 0vh;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: url(../images/smartphone.png.png);
-  background-size: 8vw 10vh;
-  opacity: 0.8;
-  z-index: 1003;
-  -webkit-app-region: no-drag;
-}
-
 fun {
   position: absolute;
   top: 3.5vh;
@@ -555,18 +538,24 @@ smartphone {
   -webkit-transition-timing-function: linear;
 }
 
-@media (orientation: landscape) {
+@media screen and (max-width: 992px) {
+  @media (orientation: landscape) {
+    smartphone {
+      visibility: hidden;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    smartphone {
+      visibility: visible;
+    }
+  }
+}
+@media screen and (min-width: 993px) {
   smartphone {
     visibility: hidden;
   }
 }
-
-@media (orientation: portrait) {
-  smartphone {
-    visibility: visible;
-  }
-}
-
 
 button0 {
   position: absolute;
